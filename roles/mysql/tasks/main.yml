@@ -2,9 +2,11 @@
     - name: Install MySQL
       action: yum name={{ item }}
       with_items:
-        - MySQL-python
+        - MySQL-python26
+        - MySQL-python27
         - mysql
         - mysql-server
+        
 
     - name: copy my.cnf file 
       template: src=my.cnf.j2 dest=/etc/my.cnf
