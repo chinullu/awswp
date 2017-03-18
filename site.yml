@@ -4,7 +4,6 @@
   connection: local
 
   roles:
-    - common
     - mysql
     - nginx
     - php-fpm
